@@ -7,14 +7,17 @@
     "dev": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
-    "strapi": "strapi"
+    "strapi": "strapi",
+    "types": "strapi ts:generate-types --verbose"
   },
   "devDependencies": {},
   "dependencies": {
-    "@strapi/strapi": "4.3.2",
-    "@strapi/plugin-users-permissions": "4.3.2",
+    "@strapi/plugin-documentation": "^4.4.5",
     "@strapi/plugin-i18n": "4.3.2",
-    "better-sqlite3": "7.4.6"
+    "@strapi/plugin-users-permissions": "4.3.2",
+    "@strapi/strapi": "4.3.2",
+    "better-sqlite3": "7.4.6",
+    "strapi-plugin-populate-deep": "^1.0.1"
   },
   "author": {
     "name": "Ole Bergen"

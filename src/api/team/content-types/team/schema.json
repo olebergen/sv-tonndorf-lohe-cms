@@ -20,6 +20,31 @@
       "relation": "oneToMany",
       "target": "api::player.player",
       "mappedBy": "team"
+    },
+    "training": {
+      "type": "text"
+    },
+    "photo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "positions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::position.position",
+      "mappedBy": "team"
+    },
+    "contact": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::contact.contact"
     }
   }
 }
